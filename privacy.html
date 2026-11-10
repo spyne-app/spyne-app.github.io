@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy · Spyne</title>
+  <meta name="description" content="How the Spyne app and this website handle data.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="/" aria-label="Spyne home">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="logo-dark.svg">
+          <img class="logo" src="logo.svg" alt="Spyne" width="826" height="250">
+        </picture>
+      </a>
+      <nav class="site">
+        <a href="/">About</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Privacy</h1>
+      <p class="lede">Spyne is a personal project. It does not run advertising or analytics and does not track people.</p>
+      <p>Last updated: 10 November 2026.</p>
+
+      <h2>What the app stores</h2>
+      <p>Spyne stores a catalogue of items the user owns: titles, barcodes, editions, ratings, viewing status, cover images and, optionally, the user's own photos of covers. This data is kept in a database hosted by Supabase (in Singapore) and in a local copy on the user's phone. The app currently has no public sign-up and is used by its maintainer.</p>
+
+      <h2>What is sent to other services</h2>
+      <p>To fill in details about an item, the app sends lookup requests to third-party services. These contain the item's barcode, ISBN, title, year or director, not personal information about the user.</p>
+      <ul>
+        <li>TMDB, Google Books, Open Library and UPCitemdb: barcodes, ISBNs and titles, to retrieve metadata and covers.</li>
+        <li>Wikidata and Wikipedia: titles and identifiers, to retrieve public information such as credits.</li>
+        <li>Google Gemini: when a barcode scan fails, a photo of the cover can be sent to read its details, and a film's title, year and director can be sent to produce a short synopsis.</li>
+      </ul>
+      <p>Each service handles requests under its own privacy policy.</p>
+
+      <h2>This website</h2>
+      <p>This site is a static page hosted on GitHub Pages. It sets no cookies, runs no analytics and loads no third-party scripts, fonts or trackers. As with any web host, GitHub may log technical information such as IP addresses when pages are requested; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+
+      <h2>Requests and contact</h2>
+      <p>To ask what data is held, or to have it deleted, write to <a href="mailto:spyne.app.contact@gmail.com">spyne.app.contact@gmail.com</a>.</p>
+      <p>If the app is ever released to other users, this policy will be updated before that happens.</p>
+    </main>
+
+    <footer class="site">
+      <p>Spyne is an independent personal project.</p>
+    </footer>
+  </div>
+</body>
+</html>

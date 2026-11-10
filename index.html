@@ -1,1 +1,58 @@
-<!doctype html><title>Spyne</title><h1>Spyne</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spyne</title>
+  <meta name="description" content="Spyne is a personal, non-commercial app for cataloguing a physical media collection: Blu-rays, DVDs, books and CDs.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="/" aria-label="Spyne home">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="logo-dark.svg">
+          <img class="logo" src="logo.svg" alt="Spyne" width="826" height="250">
+        </picture>
+      </a>
+      <nav class="site">
+        <a href="/" aria-current="page">About</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>A catalogue for a shelf full of physical media</h1>
+      <p class="lede">Spyne is a personal, non-commercial Android app for cataloguing a collection of Blu-rays, DVDs, books and CDs by scanning their barcodes.</p>
+
+      <h2>What it is</h2>
+      <p>Spyne keeps a library of owned items with edition-accurate covers, ratings and viewing status, synced to a small online database so the collection can be browsed on the phone. It is built as a personal tool. It is not available on any app store, and there is no public sign-up.</p>
+
+      <h2>Data sources and attribution</h2>
+      <p>Spyne looks up public information about the items it catalogues. The sources are credited here.</p>
+      <ul>
+        <li><strong>Wikidata</strong>: structured data, released under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</li>
+        <li><strong>Wikipedia</strong>: where content derived from Wikipedia is shown, it is credited to Wikipedia and its contributors and available under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li><strong>The Movie Database (TMDB)</strong>: film and series metadata and images. This product uses the TMDB API but is not endorsed or certified by TMDB.</li>
+        <li><strong>Google Books</strong> and <strong>Open Library</strong>: book metadata and covers.</li>
+        <li><strong>UPCitemdb</strong>: barcode lookups.</li>
+      </ul>
+
+      <h2>How Spyne uses Wikimedia services</h2>
+      <p>Spyne makes low-volume requests to the Wikidata and Wikipedia APIs, caches what it retrieves, and is designed to respect rate limits. Its requests identify the project with this User-Agent:</p>
+      <p><code>Spyne/0.1 (https://spyne-app.github.io; spyne.app.contact@gmail.com)</code></p>
+
+      <h2>Contact</h2>
+      <p>Questions, corrections or concerns about how Spyne uses a data source can be sent to <a href="mailto:spyne.app.contact@gmail.com">spyne.app.contact@gmail.com</a>.</p>
+    </main>
+
+    <footer class="site">
+      <p>Spyne is an independent personal project. Names and trademarks belong to their respective owners.</p>
+    </footer>
+  </div>
+</body>
+</html>
